@@ -1,0 +1,7 @@
+// .eslintignore
+**/node_modules/*
+**/out/*
+**/.next/*
+**/src/graphql/*.graphql.d.ts
+*.graphqls.d.ts
+next.config.js
