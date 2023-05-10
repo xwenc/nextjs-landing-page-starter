@@ -1,5 +1,7 @@
-module.exports = {
-  swcMinify: false,
-  trailingSlash: true,
-  env: {},
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  productionBrowserSourceMaps: true,
 };
+
+module.exports = nextConfig;
