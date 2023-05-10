@@ -1,4 +1,4 @@
-import { Public_Sans, Barlow } from '@next/font/google';
+import { Poppins } from '@next/font/google';
 
 // ----------------------------------------------------------------------
 
@@ -24,18 +24,12 @@ export function responsiveFontSizes({ sm, md, lg }: { sm: number; md: number; lg
   };
 }
 
-export const primaryFont = Public_Sans({
+export const primaryFont = Poppins({
   weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
   display: 'swap',
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
-});
-
-export const secondaryFont = Barlow({
-  weight: ['900'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  variable: '--font-poppins',
 });
 
 // ----------------------------------------------------------------------
@@ -118,6 +112,7 @@ const typography = {
     fontSize: pxToRem(14),
     textTransform: 'capitalize',
   },
+  variable: primaryFont.variable,
 } as const;
 
 export default typography;

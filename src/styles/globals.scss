@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply font-poppins antialiased;
+    letter-spacing: -0.1px;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    @apply font-poppins antialiased;
+  }
+  :focus-visible {
+    @apply outline-none;
+  }
+}

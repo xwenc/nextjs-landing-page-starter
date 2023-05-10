@@ -10,7 +10,7 @@ module.exports = {
       xl: '1202px',
     },
     fontFamily: {
-      body: ['Poppins', 'sans-serif'],
+      poppins: ['var(--font-poppins)'],
     },
     container: {
       center: true,
